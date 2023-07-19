@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Order Success</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+    />
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-image: url("https://genk.mediacdn.vn/2019/2/3/gangplank-15492029150701256481096.jpg");
+            max-width: 676px;
+            max-height: 407px;
+            width: 676px;
+            padding: 40px 52px 52px 52px;
+            background-repeat: no-repeat;
+        }
+
+        .content {
+            margin-top: 48px;
+        }
+
+        .text {
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: 400;
+            color: #ffffff !important;;
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+        }
+
+        .have_top {
+            margin-top: 24px;
+        }
+
+        a {
+            color: #ffffff !important;;
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+        }
+
+        .second_line {
+            margin-top: 5px;
+        }
+
+        .mail {
+            color: #00e5ff;
+        }
+
+        .note {
+            font-size: 12px;
+            line-height: 14px;
+            font-weight: 400;
+            font-family: "Roboto", sans-serif;
+            color: #d5d5d5;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .container {
+                max-width: 311px;
+                width: 100%;
+                height: 100%;
+                padding: 20px 20px 24.5px 20px;
+                background-image: url("https://genk.mediacdn.vn/2019/2/3/gangplank-15492029150701256481096.jpg");
+            }
+
+            .content {
+                margin-top: 25px;
+            }
+
+            .have_top {
+                margin-top: 12px;
+            }
+
+            .have_top.default {
+                margin-top: 24px;
+            }
+            .text {
+                font-size: 12px;
+                line-height: 18px;
+            }
+            .note {
+                font-size: 10px;
+                line-height: 12px;
+            }
+
+            img {
+                display: block;
+                width: 146px;
+                height: 20px;
+            }
+            p.mt_mb_16 {
+                margin-top: 16px;
+            }
+            .mb_mb_5 {
+                margin-bottom: 5px;
+            }
+            .lh_14 {
+                line-height: 14.06px;
+            }
+            .second_line.lh_14 {
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <p class="text">Dear Customer,</p>
+        <p class="text have_top mb_mb_5 lh_14">Congratulation!</p>
+        <p class="text lh_14">
+            You have just order successfull order id : <b th:text="${order_id}"></b>
+        </p>
+        <p>Just a failure from TienDepTrai1234 aka Mohamed Tiên Vướng</p>
+        <p class="text have_top default">
+            If you have any question, please contact
+            <a style="color: #00e5ff !important;"
+                    class="mail"
+                    href="mailto:vuongtien2942000@gmail.com"
+                    target="_blank"
+            >
+                vuongtien2942000@gmail.com
+            </a>
+        </p>
+        <p class="text have_top">Sincerely,</p>
+        <p class="text second_line">TienDepTrai1234</p>
+        <p class="note have_top mt_mb_16">
+            Note: This is an auto-generated email, please do not reply
+        </p>
+    </div>
+</div>
+</body>
+</html>
+
+

@@ -1,0 +1,27 @@
+{
+  "groups": [
+    {
+      "name": "firebase",
+      "type": "tien.baseproject.notificationservice.config.properties.FirebaseProperties",
+      "sourceType": "tien.baseproject.notificationservice.config.properties.FirebaseProperties"
+    },
+    {
+      "name": "mail.setting.constant",
+      "type": "tien.baseproject.notificationservice.config.properties.MailProperties",
+      "sourceType": "tien.baseproject.notificationservice.config.properties.MailProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "firebase.google-credentials",
+      "type": "java.lang.String",
+      "sourceType": "tien.baseproject.notificationservice.config.properties.FirebaseProperties"
+    },
+    {
+      "name": "mail.setting.constant.mail-from",
+      "type": "java.lang.String",
+      "sourceType": "tien.baseproject.notificationservice.config.properties.MailProperties"
+    }
+  ],
+  "hints": []
+}
